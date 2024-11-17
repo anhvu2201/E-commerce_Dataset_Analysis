@@ -1,7 +1,7 @@
 # Explore-Ecommerce-Dataset
 # I. Introduction
 
-In this project, I will use SQL on [Google BigQuery]([url](https://cloud.google.com/bigquery/)) to explore an eCommerce business dataset, which is based on the Google Analytics public dataset.
+In this project, I will use SQL on Google [BigQuery](https://cloud.google.com/bigquery/) to explore an eCommerce business dataset, which is based on the Google Analytics public dataset.
 
 # II. Dataset Exploration
 
@@ -30,7 +30,7 @@ There is 8 different queries in this project:
 			201701	64694	257708		713
 			201702	62192	233373		733
 			201703	69931	259522		993
-- [Link To Result]([url](https://drive.google.com/file/d/1TMId10oA9mxwMws7YoTywQspK7LW2il4/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/1TMId10oA9mxwMws7YoTywQspK7LW2il4/view?usp=sharing)
 ## Query 02: Bounce rate per traffic source in July 2017.
 
 - SQL Code:
@@ -58,7 +58,7 @@ There is 8 different queries in this project:
 		google.com		368	183			49.728
 		dfa			302	124			41.06
 		sites.google.com	230	97			42.174
-- [Link To Result]([url](https://drive.google.com/file/d/1a_w1-Brkxmsx2encFke0t704Yj9s6BBB/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/1a_w1-Brkxmsx2encFke0t704Yj9s6BBB/view?usp=sharing)
 
 ## Query 03: Revenue contributed by traffic source calculated by week and by month in June 2017.
 
@@ -101,7 +101,7 @@ There is 8 different queries in this project:
 		Month		201706	dfa		8862.23
 		Week		201722	(direct)	6888.9
 		Week		201726	google		5330.57
-- [Link To Result]([url](https://drive.google.com/file/d/1bIS2-TLoupKlBFz62ECcB00XLRxeOs8h/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/1bIS2-TLoupKlBFz62ECcB00XLRxeOs8h/view?usp=sharing)
 
 
 ## Query 04: Average number of product pageviews categorized by purchaser type (purchasers and non-purchasers) in June and July 2017.
@@ -146,7 +146,7 @@ There is 8 different queries in this project:
 		month		avg_pageviews_purchase	avg_pageviews_non_purchase
 		201706	94.02050113895217	316.86558846341671
 		201707	124.23755186721992	334.05655979568053
-- [Link To Result]([url](https://drive.google.com/file/d/1XxcJESc57hGYPZOmuQ2H1o-DVRq1KB3x/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/1XxcJESc57hGYPZOmuQ2H1o-DVRq1KB3x/view?usp=sharing)
 
 ## Query 05: Average number of transactions per user that made atleast a purchase in July 2017.
 
@@ -167,7 +167,7 @@ There is 8 different queries in this project:
 
 		Month		Avg_total_transactions_per_user
 		201707	4.16390041493776
-- [Link To Result]([url](https://drive.google.com/file/d/15zB2NTqVZiVx8lGYxuZdN7dbbjSryRx8/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/15zB2NTqVZiVx8lGYxuZdN7dbbjSryRx8/view?usp=sharing)
 
 ## Query 06: Average amount of money spent per session in July 2017.
 
@@ -187,7 +187,7 @@ There is 8 different queries in this project:
 
 		Month		avg_revenue_by_user_per_visit
 		201707	43.86
-- [Link To Result]([url](https://drive.google.com/file/d/1-YCR7yBo3gMGngwNUTfLfX58JoEOqeKQ/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/1-YCR7yBo3gMGngwNUTfLfX58JoEOqeKQ/view?usp=sharing)
 
 ## Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017.
 
@@ -232,7 +232,7 @@ There is 8 different queries in this project:
 		Android Wool Heather Cap Heather/Black		2
 		YouTube Twill Cap					2
 		Recycled Mouse Pad					2
-- [Link To Result]([url](https://drive.google.com/file/d/1eWZoWVcLPy-2Uv4K1F_tjkrR7ZGE8hwi/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/1eWZoWVcLPy-2Uv4K1F_tjkrR7ZGE8hwi/view?usp=sharing)
 
 ## Query 08: Calculate cohort map from pageview to addtocart to purchase in the last 3 month.
 
@@ -264,7 +264,7 @@ There is 8 different queries in this project:
 		201701	25787			7342		  2143		28.47			8.31
 		201702	21489			7360		  2060		34.25			9.59
 		201703	23549			8782		  2977		37.29			12.64
-- [Link To Result]([url](https://drive.google.com/file/d/1MiMC9QuzYWLw_or2QZt60T7YqvYhmM1y/view?usp=sharing))
+- Link To Result: [Link](https://drive.google.com/file/d/1MiMC9QuzYWLw_or2QZt60T7YqvYhmM1y/view?usp=sharing)
 
 # III. Conclusion
 
