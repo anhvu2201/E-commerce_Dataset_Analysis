@@ -1,4 +1,4 @@
--- Q1
+-- Q1: calculate total visit, pageview, transaction and revenue for Jan, Feb and March 2017 order by month
 SELECT
     format_date('%Y%m',PARSE_DATE('%Y%m%d', date) ) month
     ,SUM(totals.visits) visits
@@ -13,7 +13,7 @@ GROUP BY
 ORDER BY 
     month;
 
--- Q2
+-- Q2: Bounce rate per traffic source in July 2017
 SELECT 
     trafficSource.source source
     ,SUM(totals.visits) visits
@@ -26,7 +26,7 @@ GROUP BY
 ORDER BY 
     visits desc;
 
--- Q3
+-- Q3: Revenue by traffic source by week, by month in June 2017
 SELECT
     'Month' time_type
     , format_date('%Y%m',PARSE_DATE('%Y%m%d', date) ) time
@@ -52,7 +52,7 @@ WHERE product.productRevenue is not null
 GROUP BY source, time
 Order by revenue desc;
 
--- Q4
+-- Q4: Average number of product pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
 WITH 
 purchaser_data AS(
   SELECT
@@ -87,7 +87,7 @@ FROM purchaser_data pd
 FULL JOIN non_purchaser_data USING(month)
 ORDER BY pd.month;
 
--- Q5
+-- Q5: Average number of transactions per user that made a purchase in July 2017
 SELECT
     format_date('%Y%m',PARSE_DATE('%Y%m%d', date) ) Month
     , sum(totals.transactions) / count (distinct (fullVisitorId)) Avg_total_transactions_per_user
@@ -99,7 +99,7 @@ WHERE totals.transactions >= 1
   and _table_suffix between '01' and '31'
 GROUP BY month;
 
--- Q6
+-- Q6: Average amount of money spent per session
 SELECT
     format_date('%Y%m',PARSE_DATE('%Y%m%d', date) ) Month
     , ROUND ((sum(product.productRevenue) / sum(totals.visits) / 1000000),2) avg_revenue_by_user_per_visit
@@ -111,7 +111,7 @@ WHERE totals.transactions is not null
     and _table_suffix between '01' and '31'
 GROUP BY month;
 
--- Q7
+-- Q7: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered
 With customers_who_purchased_henley as (
 SELECT DISTINCT fullVisitorId
 FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201707*`
@@ -139,7 +139,7 @@ WHERE
 GROUP BY other_purchased_products
 ORDER BY quantity DESC;
 
--- Q8
+-- Q8: Calculate cohort map from pageview to addtocart to purchase in last 3 month. For example, 100% pageview then 40% add_to_cart and 10% purchase
 WITH product_data AS(
 SELECT
     FORMAT_DATE('%Y%m', PARSE_DATE('%Y%m%d',date)) AS month,
