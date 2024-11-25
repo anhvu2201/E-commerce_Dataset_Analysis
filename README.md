@@ -1,4 +1,4 @@
-# E-commerce Dataset Analysis
+#  E-commerce Website Performance Analysis
 # I. Introduction
 
 In this project, I will use SQL on Google [BigQuery](https://cloud.google.com/bigquery/) to explore an eCommerce business dataset, which is based on the Google Analytics public dataset.
